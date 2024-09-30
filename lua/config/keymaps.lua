@@ -22,12 +22,17 @@ vim.keymap.set("n", "<C-Space>", nvim_tmux_nav.NvimTmuxNavigateNext)
 local harpoon = require("harpoon")
 local oil = require("oil")
 local which_key = require("which-key")
-which_key.register({
-  ["<leader>"] = {
-    o = {
-      name = "Obsidian",
-    },
+
+which_key.add({
+  {
+    "<leader>o",
+    group = "Obsidian",
   },
+  -- ["<leader>"] = {
+  --   o = {
+  --     name = "Obsidian",
+  --   },
+  -- },
 })
 harpoon:setup()
 oil.setup()
