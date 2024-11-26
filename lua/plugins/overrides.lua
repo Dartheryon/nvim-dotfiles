@@ -127,6 +127,7 @@ return {
         "regex",
         "tsx",
         "typescript",
+        "php",
         "vim",
         "yaml",
       },
